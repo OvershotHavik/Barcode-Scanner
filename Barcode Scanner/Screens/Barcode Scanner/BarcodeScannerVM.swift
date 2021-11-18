@@ -18,18 +18,4 @@ final class BarcodeScannerVM: ObservableObject{
     var statusTextColor: Color{
         scannedCode.isEmpty ? .red : .green
     }
-    
-    /*
-     @State private var isShowingAlert = false
-
-     basic alert triggered when the isShowingAlert switches to true, which was triggered by this temporary button:
-     Button{
-         isShowingAlert = true
-     } label: {
-         Text("tap me!")
-     }
-     .alert(isPresented: $isShowingAlert) {
-         Alert(title: Text("Test"), message: Text("This is a test"), dismissButton: .default(Text("ok")))
-     }
-     */
 }
